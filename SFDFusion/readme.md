@@ -8,7 +8,7 @@ python 3.10
 cuda 11.8
 
 
-'''
+'''python
 
 def check_mask(root: Path, img_list, config: ConfigDict):
     mask_cache = True
