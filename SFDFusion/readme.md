@@ -7,8 +7,7 @@ python 3.10
 
 cuda 11.8
 
-
-'''python
+```python
 
 def check_mask(root: Path, img_list, config: ConfigDict):
     mask_cache = True
@@ -26,6 +25,6 @@ def check_mask(root: Path, img_list, config: ConfigDict):
         saliency = Saliency()
         saliency.inference(src=root / 'ir', dst=root / 'mask', suffix='jpg')
         
-'''
+```
 
 这段代码中最后一行suffix要改为数据集对应的图像格式
