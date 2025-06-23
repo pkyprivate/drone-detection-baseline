@@ -1,7 +1,10 @@
+https://github.com/lqz2/SFDFusion?tab=readme-ov-file
+
 需要使用wandb
 
 在wandb网站上登录后获取API密钥，或者在cfg.yaml文件中将wandb_mode改为offline
 
+这两个版本必须正确，否则报错
 
 python 3.10
 
@@ -28,3 +31,5 @@ def check_mask(root: Path, img_list, config: ConfigDict):
 ```
 
 这段代码中最后一行suffix要改为数据集对应的图像格式
+
+数据集格式参考RoadScene文件夹
