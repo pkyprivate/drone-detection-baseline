@@ -2,42 +2,48 @@
 This repository serves as the algorithmic baseline for a UAV dataset containing visible and infrared images.
 
 # RSDet 
-Ê¹ÓÃËµÃ÷ https://github.com/Zhao-Tian-yi/RSDet
+ä½¿ç”¨è¯´æ˜ https://github.com/Zhao-Tian-yi/RSDet
 
-## ÑµÁ·
-train£ºpython tools/train.py configs/fusion/RSDet/faster_rcnn_r50_common_unique_LLVIP_14th.py --work-dir ./work_dirs/exp1 --amp --auto-scale-lr --resume auto
+## è®­ç»ƒ
+trainï¼špython tools/train.py configs/fusion/RSDet/faster_rcnn_r50_common_unique_LLVIP_14th.py --work-dir ./work_dirs/exp1 --amp --auto-scale-lr --resume auto
 
-¶ÔÓÚĞÂÊı¾İ¼¯£¬ĞèÒªÔÚconfigs/fusion/ResdetÖĞ¹¹½¨ĞÂµÄÑµÁ··½·¨ ÔÚconfigs/_base/datasetÖĞ¹¹½¨ĞÂµÄÎÄ¼ş
-## ²âÊÔ
-test£ºpython tools/test.py configs/fusion/RSDet/faster_rcnn_r50_common_unique_LLVIP_14th.py work_dirs/faster_rcnn/latest.pth
+å¯¹äºæ–°æ•°æ®é›†ï¼Œéœ€è¦åœ¨configs/fusion/Resdetä¸­æ„å»ºæ–°çš„è®­ç»ƒæ–¹æ³• åœ¨configs/_base/datasetä¸­æ„å»ºæ–°çš„æ–‡ä»¶
+## æµ‹è¯•
+testï¼špython tools/test.py configs/fusion/RSDet/faster_rcnn_r50_common_unique_LLVIP_14th.py work_dirs/faster_rcnn/latest.pth
 
 
 
 # Efficient-RGB-T-Early-Fusion-Detection 
-Ê¹ÓÃËµÃ÷ https://github.com/XueZ-phd/Efficient-RGB-T-Early-Fusion-Detection
+ä½¿ç”¨è¯´æ˜ https://github.com/XueZ-phd/Efficient-RGB-T-Early-Fusion-Detection
 
-## ÑµÁ·
+## è®­ç»ƒ
 python tools/train.py  /root/workspace/personal_data/pky/RGBT/Efficient-RGB-T-Early-Fusion-Detection-main/mmdetection/configs/gfl/gfl_r50_fpn_1x_m3fd.py --work-dir ./work_dirs/exp1 --amp 
 
 python tools/train.py  /root/workspace/personal_data/pky/RGBT/Efficient-RGB-T-Early-Fusion-Detection-main/mmdetection/configs/gfl/gfl_r50_fpn_1x_m3fd_kdMed2Ear.py --work-dir ./work_dirs/exp2 --amp 
 
-¶ÔÓÚĞÂÊı¾İ¼¯£¬ĞèÒªÔÚconfigs/ÖĞ¹¹½¨ĞÂµÄÑµÁ··½·¨ ÔÚconfigs/_base/datasetÖĞ¹¹½¨ĞÂµÄÎÄ¼ş
-## ²âÊÔ
+å¯¹äºæ–°æ•°æ®é›†ï¼Œéœ€è¦åœ¨configs/ä¸­æ„å»ºæ–°çš„è®­ç»ƒæ–¹æ³• åœ¨configs/_base/datasetä¸­æ„å»ºæ–°çš„æ–‡ä»¶
+## æµ‹è¯•
 python tools/test.py ./runs/train/M3FD_coreKD_rgbtEarly_zxModifiedStem_gfl_r101tor50_fpn_1x_bs4_clipTransfer/gfl_r50_fpn_1x_m3fd_kdMed2Ear.py ./runs/train/M3FD_coreKD_rgbtEarly_zxModifiedStem_gfl_r101tor50_fpn_1x_bs4_clipTransfer/epoch_10.pth --work-dir ./runs/inference
 
 
 
 # DAMSDet:
-Ê¹ÓÃËµÃ÷£ºhttps://github.com/gjj45/DAMSDet?tab=readme-ov-file
-## ÑµÁ·
+ä½¿ç”¨è¯´æ˜ï¼šhttps://github.com/gjj45/DAMSDet?tab=readme-ov-file
+## è®­ç»ƒ
 python tools/train.py -c configs/damsdet/damsdet_r50vd_llvip.yml -o pretrain_weights=coco_pretrain_weights.pdparams --eval
 
-## ²âÊÔ
+## æµ‹è¯•
 python tools/eval.py -c configs/damsdet/damsdet_r50vd_llvip.yml --classwise -o weights=output/LLVIP/damsdet_r50vd_llvip/best_model
 
 
 # ICAFusion:
-Ê¹ÓÃËµÃ÷£ºhttps://github.com/chanchanchan97/ICAFusion?tab=readme-ov-file
+ä½¿ç”¨è¯´æ˜ï¼šhttps://github.com/chanchanchan97/ICAFusion?tab=readme-ov-file
 
-## ÑµÁ·
+## è®­ç»ƒ
 python train.py
+
+# DEYOLO
+ä½¿ç”¨è¯´æ˜è§æ–‡ä»¶å¤¹readmeæ–‡ä»¶
+
+# SFDFusion
+ä½¿ç”¨è¯´æ˜è§æ–‡ä»¶å¤¹readmeæ–‡ä»¶
