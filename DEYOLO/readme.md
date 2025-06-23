@@ -15,3 +15,35 @@ train_results = model.train(
     device="cpu",  # device to run on, i.e. device=0 or device=0,1,2,3 or device=cpu
 )
 ```
+
+# 数据集路径组织
+'''
+Your dataset
+├── ...
+├── images
+|   ├── vis_train
+|   |   ├── 1.jpg
+|   |   ├── 2.jpg
+|   |   └── ...
+|   ├── vis_val
+|   |   ├── 1.jpg
+|   |   ├── 2.jpg
+|   |   └── ...
+|   ├── Ir_train
+|   |   ├── 100.jpg
+|   |   ├── 101.jpg
+|   |   └── ...
+|   ├── Ir_val 
+|   |   ├── 100.jpg
+|   |   ├── 101.jpg
+|   |   └── ...
+└── labels
+    ├── vis_train
+    |   ├── 1.txt
+    |   ├── 2.txt
+    |   └── ...
+    └── vis_val
+        ├── 100.txt
+        ├── 101.txt
+        └── ...
+'''
