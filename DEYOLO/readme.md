@@ -17,7 +17,10 @@ train_results = model.train(
 ```
 
 # 数据集路径组织
-'''
+<details open>
+  <summary><b>File structure</b></summary>
+
+```
 Your dataset
 ├── ...
 ├── images
@@ -46,4 +49,8 @@ Your dataset
         ├── 100.txt
         ├── 101.txt
         └── ...
-'''
+```
+
+</details>
+
+
