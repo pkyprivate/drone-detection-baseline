@@ -9,6 +9,7 @@ cuda 11.8
 
 
 '''
+
 def check_mask(root: Path, img_list, config: ConfigDict):
     mask_cache = True
     if (root / 'mask').exists():
@@ -24,5 +25,7 @@ def check_mask(root: Path, img_list, config: ConfigDict):
         logging.info('find no mask cache in folder, start saliency detection')
         saliency = Saliency()
         saliency.inference(src=root / 'ir', dst=root / 'mask', suffix='jpg')
+        
 '''
+
 这段代码中最后一行suffix要改为数据集对应的图像格式
