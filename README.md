@@ -42,6 +42,11 @@ python tools/eval.py -c configs/damsdet/damsdet_r50vd_llvip.yml --classwise -o w
 ## 训练
 python train.py
 
+# E2E-MFD 
+使用说明：https://github.com/icey-zhang/E2E-MFD/
+## 训练
+python tools/train.py
+衷心建议大家不用这个论文，代码完全不能用，dataset给的不清，跟我自己写了个代码没啥区别
 # DEYOLO
 使用说明见文件夹readme文件
 
@@ -50,3 +55,5 @@ python train.py
 
 # EI2Det
 使用说明见文件夹readme文件
+
+
