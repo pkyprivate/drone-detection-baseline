@@ -53,6 +53,9 @@ python tools/train.py
 # SFDFusion
 使用说明见文件夹readme文件
 
+# TarDAL
+使用说明见文件夹readme文件
+
 # EI2Det
 使用说明见文件夹readme文件
 
