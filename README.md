@@ -59,4 +59,7 @@ python tools/train.py
 # EI2Det
 使用说明见文件夹readme文件
 
+# ModTr
+使用说明见文件夹readme文件
+
 
