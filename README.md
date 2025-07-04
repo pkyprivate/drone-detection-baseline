@@ -1,13 +1,13 @@
 # drone-detection-baseline
 This repository serves as the algorithmic baseline for a UAV dataset containing visible and infrared images.
 
-# RSDet 
+# RSDet  done!!!
 使用说明 https://github.com/Zhao-Tian-yi/RSDet
 
 ## 训练
 train：python tools/train.py configs/fusion/RSDet/faster_rcnn_r50_common_unique_LLVIP_14th.py --work-dir ./work_dirs/exp1 --amp --auto-scale-lr --resume auto
 
-对于新数据集，需要在configs/fusion/Resdet中构建新的训练方法 在configs/_base/dataset中构建新的文件
+对于新数据集，需要在configs/fusion/Resdet中构建新的训练方法 在configs/_base/dataset中构建新的文件  
 ## 测试
 test：python tools/test.py configs/fusion/RSDet/faster_rcnn_r50_common_unique_LLVIP_14th.py work_dirs/faster_rcnn/latest.pth
 
