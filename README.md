@@ -13,7 +13,7 @@ test：python tools/test.py configs/fusion/RSDet/faster_rcnn_r50_common_unique_L
 
 
 
-# Efficient-RGB-T-Early-Fusion-Detection 
+# Efficient-RGB-T-Early-Fusion-Detection   done!!!
 使用说明 https://github.com/XueZ-phd/Efficient-RGB-T-Early-Fusion-Detection
 
 ## 训练
@@ -27,7 +27,7 @@ python tools/test.py ./runs/train/M3FD_coreKD_rgbtEarly_zxModifiedStem_gfl_r101t
 
 
 
-# DAMSDet:
+# DAMSDet:  done！！！
 使用说明：https://github.com/gjj45/DAMSDet?tab=readme-ov-file
 ## 训练
 python tools/train.py -c configs/damsdet/damsdet_r50vd_llvip.yml -o pretrain_weights=coco_pretrain_weights.pdparams --eval
