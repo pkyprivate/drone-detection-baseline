@@ -36,13 +36,13 @@ python tools/train.py -c configs/damsdet/damsdet_r50vd_llvip.yml -o pretrain_wei
 python tools/eval.py -c configs/damsdet/damsdet_r50vd_llvip.yml --classwise -o weights=output/LLVIP/damsdet_r50vd_llvip/best_model
 
 
-# ICAFusion: done！！！ half
+# ICAFusion: done！！！ 
 使用说明：https://github.com/chanchanchan97/ICAFusion?tab=readme-ov-file
 
 ## 训练
 python train.py
 
-# E2E-MFD 
+# E2E-MFD delete
 使用说明：https://github.com/icey-zhang/E2E-MFD/
 ## 训练
 python tools/train.py
