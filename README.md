@@ -54,10 +54,9 @@ python train.py
 # TarDAL
 使用说明见文件夹readme文件
 
-# EI2Det
-使用说明见文件夹readme文件
+# misaligned RGB-Infrared
 
-# ModTr
-使用说明见文件夹readme文件
+# TFDet
+
 
 
